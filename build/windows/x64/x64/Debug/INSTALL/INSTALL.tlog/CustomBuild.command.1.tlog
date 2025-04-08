@@ -1,0 +1,10 @@
+^C:\USERS\ALUNO.FSA\LOGIN\BUILD\WINDOWS\X64\CMAKEFILES\A51FAFC83DBB62E2396C9236C6D99676\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -45,7 +45,7 @@
     },
     {
       "name": "flutter",
-      "rootUri": "file:///C:/flutter/flutter/flutter/packages/flutter",
+      "rootUri": "file:///C:/Users/aluno.fsa/Documents/Pr%20de%20Ds/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "3.7"
     },
@@ -57,7 +57,7 @@
     },
     {
       "name": "flutter_test",
-      "rootUri": "file:///C:/flutter/flutter/flutter/packages/flutter_test",
+      "rootUri": "file:///C:/Users/aluno.fsa/Documents/Pr%20de%20Ds/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "3.7"
     },
@@ -111,7 +111,7 @@
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///C:/flutter/flutter/flutter/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///C:/Users/aluno.fsa/Documents/Pr%20de%20Ds/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "3.7"
     },
@@ -170,10 +170,10 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-04-07T12:21:19.251712Z",
+  "generated": "2025-04-08T11:38:11.350768Z",
   "generator": "pub",
   "generatorVersion": "3.7.0",
-  "flutterRoot": "file:///C:/flutter/flutter/flutter",
+  "flutterRoot": "file:///C:/Users/aluno.fsa/Documents/Pr%20de%20Ds/flutter",
   "flutterVersion": "3.29.0",
   "pubCache": "file:///C:/Users/aluno.fsa/AppData/Local/Pub/Cache"
 }

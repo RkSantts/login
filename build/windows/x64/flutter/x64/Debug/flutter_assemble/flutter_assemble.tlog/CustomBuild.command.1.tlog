@@ -1,0 +1,28 @@
+^C:\USERS\ALUNO.FSA\LOGIN\BUILD\WINDOWS\X64\CMAKEFILES\9546C9ED894FB38ABD258EAA09758AAA\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env "FLUTTER_ROOT=C:\Users\aluno.fsa\Documents\Pr de Ds\flutter" PROJECT_DIR=C:\Users\aluno.fsa\login "FLUTTER_ROOT=C:\Users\aluno.fsa\Documents\Pr de Ds\flutter" FLUTTER_EPHEMERAL_DIR=C:\Users\aluno.fsa\login\windows\flutter\ephemeral PROJECT_DIR=C:\Users\aluno.fsa\login FLUTTER_TARGET=C:\Users\aluno.fsa\login\lib\Login.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\aluno.fsa\login\.dart_tool\package_config.json "C:/Users/aluno.fsa/Documents/Pr de Ds/flutter/packages/flutter_tools/bin/tool_backend.bat" windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ALUNO.FSA\LOGIN\BUILD\WINDOWS\X64\CMAKEFILES\6278889D41C69DF0EE2326B68E3FB72C\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ALUNO.FSA\LOGIN\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/aluno.fsa/login/windows -BC:/Users/aluno.fsa/login/build/windows/x64 --check-stamp-file C:/Users/aluno.fsa/login/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
