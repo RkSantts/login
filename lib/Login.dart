@@ -19,7 +19,14 @@ class LoginApp extends StatelessWidget {
 }
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+   LoginPage({super.key});
+
+  
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController senhaController = TextEditingController();
+
+   final String emailCorreto = "rick@senai.com";
+   final String senhaCorreta = "1234";
 
   @override
   Widget build(BuildContext context) {
@@ -48,6 +55,7 @@ class LoginPage extends StatelessWidget {
 
             SizedBox(height: 24.0),
             TextFormField(
+              controller: emailController,
               decoration: InputDecoration(labelText: 'Email',
               prefixIcon: Icon(Icons.email),
                 border: OutlineInputBorder(
@@ -57,6 +65,7 @@ class LoginPage extends StatelessWidget {
             ),
             SizedBox(height: 16.0),
             TextFormField(
+              controller: senhaController,
               obscureText: true,
               decoration: InputDecoration(labelText: 'Senha',
                prefixIcon: Icon(Icons.password),
@@ -68,10 +77,25 @@ class LoginPage extends StatelessWidget {
            SizedBox(height: 32.0),
             ElevatedButton(
               onPressed: () {
+                String email = emailController.text;
+                String senha = senhaController.text;
+
+                if (email.isEmpty || senha.isEmpty){
+                   ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Preencha todos os campos')),
+                  ); 
+                } else if(email != emailCorreto || senha != senhaCorreta){
+
+                   ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Email ou senha incorreto')),
+                  );
+                  } else {
                 Navigator.push(
                   context,
                    MaterialPageRoute(builder:(context) => TelaInicio()),
             );
+                  }
+                
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(233, 226, 222, 0), // Cor de fundo do botão
